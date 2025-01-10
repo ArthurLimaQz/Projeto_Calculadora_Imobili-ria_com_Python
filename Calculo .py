@@ -32,26 +32,3 @@ while True:
     if repetir != 's':
         print('Encerramos os calculos por aqui!')
         break
-""" 
-f"{valor:,.2f}"
-f-string (disponível a partir do Python 3.6) permite inserir variáveis diretamente em strings, usando a sintaxe {variável:formatação}.
-:,.2f é o especificador de formato:
-, insere vírgulas como separadores de milhar (padrão americano).
-.2f formata o valor como um número decimal com 2 casas após a vírgula.
-
-.replace(",", ".")
-Aqui, usamos o método replace(",", ".") para substituir todas as vírgulas geradas pelo formato padrão americano por pontos. Isso transforma 1,234,567.89 em 1.234.567.89.
-
-A função .strip().lower() foi adicionada no momento de entrada da variável repetir para melhorar a usabilidade e evitar erros devido a espaços ou diferenças de maiúsculas e minúsculas. Aqui está a explicação detalhada:
-
-.strip()
-
-Remove quaisquer espaços em branco extras no início e no final da entrada do usuário.
-Isso é útil porque, às vezes, o usuário pode pressionar a barra de espaço antes ou depois de digitar o valor. Exemplo:
-Sem .strip(): " s " (com espaços) seria tratado como inválido.
-Com .strip(): " s " se torna "s", o que é válido.
-.lower()
-
-Converte todas as letras para minúsculas.
-Isso permite que o programa trate as entradas de forma consistente, independentemente de o usuário digitar "S", "s", "Sim" ou "sim". Apenas o "s" minúsculo será avaliado.
-"""
